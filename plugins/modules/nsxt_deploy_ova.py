@@ -330,7 +330,7 @@ def main():
     ova_tool_result = module.run_command(ovf_command)
 
     if ova_tool_result[0] != 0:
-        module.fail_json(msg='Failed to deploy OVA, error message from ovftool is: {}, the comand was {}'.format(ova_tool_result[1], ovf_command))
+        module.fail_json(msg='Result:{} Failed to deploy OVA, error message from ovftool is: {}, the comand was {}'.format(ova_tool_result[0], ova_tool_result[1], ovf_command))
 
     module.exit_json(changed=True, ova_tool_result=ova_tool_result)
 
