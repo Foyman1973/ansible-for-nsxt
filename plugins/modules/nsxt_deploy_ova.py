@@ -311,10 +311,10 @@ def main():
     ova_file = '{}/{}'.format(module.params['path_to_ova'], module.params['ova_file'])
     ovf_command.append(ova_file)
 
-    vi_string = 'vi://{}:{}@{}/'.format(module.params['vcenter_user'],
+    vi_string = 'vi://{}:{}@{}'.format(module.params['vcenter_user'],
                                                    module.params['vcenter_passwd'], module.params['vcenter'])
     if module.params.__contains__('folder') and module.params['folder']:
-        vi_string = vi_string + module.params['folder']
+        vi_string = vi_string + '/' + module.params['folder']
 
     vi_string = vi_string + '/{}/host/{}/'.format(module.params['datacenter'], module.params['cluster'])
 
