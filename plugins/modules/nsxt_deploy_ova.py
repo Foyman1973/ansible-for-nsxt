@@ -280,7 +280,8 @@ def main():
                         '--datastore={}'.format(module.params['datastore']),
                         '--name={}'.format(module.params['vmname']),
                         '--X:logFile="nsxt-manager-ovf.log"',
-                        '--X:logLevel="trivia"']
+                        '--X:logLevel="trivia"',
+                        '--verifyOnly']
 
     if module.params['portgroup_ext']:
         ovf_base_options.extend(['--net:Network 0={}'.format(module.params['portgroup']),
