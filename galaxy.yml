@@ -22,12 +22,12 @@ tags: [vmware, ansible, nsxt]
 
 dependencies: {}
 
-repository: https://github.com/vmware/ansible-for-nsxt
+repository: https://github.com/Foyman1973/ansible-for-nsxt
 
-documentation: https://github.com/vmware/ansible-for-nsxt
+documentation: https://github.com/Foyman1973/ansible-for-nsxt
 
-homepage: https://github.com/vmware/ansible-for-nsxt
+homepage: https://github.com/Foyman1973/ansible-for-nsxt
 
-issues: https://github.com/vmware/ansible-for-nsxt/issues
+issues: https://github.com/Foyman1973/ansible-for-nsxt/issues
 
 build_ignore: []
